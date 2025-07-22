@@ -84,7 +84,7 @@ const ExcelDropToWord = () => {
                     {
                         children: [
                             new Paragraph({
-                                // indent: { left: 720 },
+                                indent: { top: 20 },
                                 children: [
                                     new TextRun({
                                         text: "Exception and Clarification",
