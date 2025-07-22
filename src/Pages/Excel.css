@@ -1,0 +1,61 @@
+/* Excel.css */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #fdfdfd;
+    color: #444;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.drop-area {
+    border: 3px dashed #007bff;
+    padding: 60px 20px;
+    border-radius: 12px;
+    background: #e9f4ff;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.drop-area:hover {
+    background: #d4ecff;
+    transform: scale(1.02);
+}
+
+.drop-area h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 18px;
+    color: #888;
+    font-family: "Times New Roman", Times, serif;
+}
