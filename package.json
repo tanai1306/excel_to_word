@@ -1,7 +1,7 @@
 {
   "name": "excel-to-word-tool",
   "version": "0.1.0",
-  "homepage": "/Excel_To_Word_Generator/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
