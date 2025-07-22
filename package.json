@@ -1,7 +1,7 @@
 {
   "name": "excel-to-word-tool",
   "version": "0.1.0",
-  "homepage": "https://tanai1306.github.io/Excel_To_Word_Generator",
+  "homepage": "/Excel_To_Word_Generator/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
