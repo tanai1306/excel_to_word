@@ -84,7 +84,7 @@ const ExcelDropToWord = () => {
                     {
                         children: [
                             new Paragraph({
-                                indent: { left: 720 },
+                                // indent: { left: 720 },
                                 children: [
                                     new TextRun({
                                         text: "Exception and Clarification",
@@ -100,7 +100,7 @@ const ExcelDropToWord = () => {
                                 ],
                             }),
                             new Paragraph({
-                                indent: { left: 720 },
+                                // indent: { left: 720 },
                                 children: [
                                     new TextRun({
                                         text: "Exceptions:", font: "Arial Narrow", shading: {
@@ -113,7 +113,7 @@ const ExcelDropToWord = () => {
                             }),
                             ...exceptions.map(makeBullet),
                             new Paragraph({
-                                indent: { left: 720 },
+                                // indent: { left: 720 },
                                 children: [
                                     new TextRun({
                                         font: "arial narrow",
