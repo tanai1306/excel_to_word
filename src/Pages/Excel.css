@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #444;
-    background: linear-gradient(-45deg, #00b4db, #0083b0, #6dd5ed, #2193b0);
+    background: linear-gradient(-45deg, #00b4db, #0083b0, #6dd5ed, #212ab0);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     min-height: 100vh;
