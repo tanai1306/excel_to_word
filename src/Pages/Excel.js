@@ -9,6 +9,8 @@ import {
     ShadingType,
 } from "docx";
 
+import "./Excel.css"
+
 
 const ExcelDropToWord = () => {
     const [status, setStatus] = useState("Drag and drop Excel file here");
@@ -46,7 +48,7 @@ const ExcelDropToWord = () => {
             const makeBullet = (text) => {
                 const parts = text.toString().split(/(Exception:|Clarification:)/i);
                 const header = parts[0]?.trim();
-                const type = parts[1]?.trim() || "";
+                const type = (parts[1] || "").replace(":", "").trim();  // 🧼 cleaned
                 const message = parts[2]?.trim() || "";
 
                 return new Paragraph({
@@ -142,6 +144,18 @@ const ExcelDropToWord = () => {
     const handleDragOver = (e) => e.preventDefault();
 
     return (
+        // <div style={{ display:"flex", flexDirection:"column", fontFamily: "time new roman", color: "#888888", alignItems:"center" }}>
+
+        //     <div style={{fontSize: "50px",}}>
+        //         Made By Anirban Roy
+        //     </div>
+        //     <div style={{fontSize: "30px",width:"50%"}}>
+        //         This tool converts structured data from an Excel file into a formatted Word document, making it easy to generate reports, templates, or letters automatically.
+        //     </div>
+
+
+
+        // </div>
         <div
             onDrop={handleDrop}
             onDragOver={handleDragOver}
@@ -151,7 +165,7 @@ const ExcelDropToWord = () => {
                 textAlign: "center",
                 borderRadius: "10px",
                 background: "#f0f8ff",
-                marginTop: "50px",
+                marginTop: "10%",
                 width: "600px",
                 margin: "auto",
             }}
