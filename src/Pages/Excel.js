@@ -139,7 +139,7 @@ const ExcelDropToWord = () => {
 
             setTimeout(() => {
                 setStatus("Drag and drop Excel file here");
-            }, 100);
+            }, 2000);
         } catch (err) {
             console.error(err);
             setStatus("❌ Error processing Excel.");
@@ -149,34 +149,6 @@ const ExcelDropToWord = () => {
     const handleDragOver = (e) => e.preventDefault();
 
     return (
-        // <div style={{ display: "flex", flexDirection: "column", fontFamily: "time new roman", color: "#888888", alignItems: "center" }}>
-
-        //     <div style={{ fontSize: "50px", }}>
-        //         Made By Anirban Roy
-        //     </div>
-        //     <div style={{ fontSize: "30px", width: "50%" }}>
-        //         This tool converts structured data from an Excel file into a formatted Word document, making it easy to generate reports, templates, or letters automatically.
-        //     </div>
-
-
-        //     <div
-        //         onDrop={handleDrop}
-        //         onDragOver={handleDragOver}
-        //         style={{
-        //             border: "2px dashed #007bff",
-        //             padding: "40px",
-        //             textAlign: "center",
-        //             borderRadius: "10px",
-        //             background: "#f0f8ff",
-        //             marginTop: "10%",
-        //             width: "600px",
-        //             margin: "auto",
-        //         }}
-        //     >
-        //         <h2 style={{ color: "#007bff" }}>📥 Drag & Drop Excel (.xlsx) File</h2>
-        //         <p style={{ color: "#444", marginTop: "20px" }}>{status}</p>
-        //     </div>
-        // </div>
 
         <div className="container">
             <h1 className="title">📘 Excel to Word Converter</h1>
