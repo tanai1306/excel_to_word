@@ -151,9 +151,9 @@ const ExcelDropToWord = () => {
     return (
 
         <div className="container">
-            <h1 className="title">📘 Excel to Word Converter</h1>
+            <h1 className="title">📘 Exception and Clarification Word Document Generator @V 1.0</h1>
             <p className="subtitle">
-                This tool converts structured data from an Excel file into a formatted Word document, making it easy to generate reports.
+                 Converts column 'G' into a segregated Exceptions and Clarifications Bulleted List.
             </p>
 
             <div className="drop-area" onDrop={handleDrop} onDragOver={handleDragOver}>
@@ -161,7 +161,7 @@ const ExcelDropToWord = () => {
                 <p className="status">{status}</p>
             </div>
 
-            <footer className="footer">Made by Anirban Roy</footer>
+            {/* <footer className="footer">Made by Anirban Roy</footer> */}
         </div>
 
 
